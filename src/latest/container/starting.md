@@ -10,6 +10,8 @@ caption: Downloading the Greenbone Community Containers
 docker compose -f $DOWNLOAD_DIR/compose.yaml pull
 ```
 
+Pulling might fail with a transient error. Keep trying.
+
 ```{code-block} shell
 ---
 caption: Starting the Greenbone Community Containers
