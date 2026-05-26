@@ -1,15 +1,15 @@
 # Greenbone Community Containers
 
-```{include} /22.4/container/preamble.md
+```{include} /latest/container/preamble.md
 ```
 
-```{include} /22.4/container/introduction.md
+```{include} /latest/container/introduction.md
 ```
 
-```{include} /22.4/container/hardware.md
+```{include} /latest/container/hardware.md
 ```
 
-```{include} /22.4/container/prerequisites.md
+```{include} /latest/container/prerequisites.md
 ```
 
 (docker-compose-file)=
@@ -24,13 +24,6 @@ since your last download.
 To run the Greenbone Community Edition with containers, the following compose
 file should be used:
 
-```{literalinclude} compose.yaml
----
-language: yaml
-caption: "Docker Compose File"
----
-```
-
 ### Download
 
 It is possible to just copy and paste the docker compose file. Alternatively,
@@ -41,6 +34,15 @@ it can be downloaded with the following command directly:
 caption: Downloading Docker compose file
 ---
 curl -f -O -L https://greenbone.github.io/docs/latest/_static/compose.yaml --output-dir "$DOWNLOAD_DIR"
+```
+
+### Raw
+
+```{literalinclude} compose.yaml
+---
+language: yaml
+caption: "Docker Compose File"
+---
 ```
 
 ### Description
@@ -72,10 +74,10 @@ and their services in detail.
 | openvas             |                                           | A container that shows the logs of OpenVAS Scanner                                                                                                                                                                                                                               |
 | openvasd            | openvasd                                  | A container for [openvasd](https://github.com/greenbone/openvas-scanner/tree/main/rust/openvasd). It is providing notus, a static vulnerability engine, functionality.                                                                                                           |
 
-```{include} /22.4/container/starting.md
+```{include} /latest/container/starting.md
 ```
 
-```{include} /22.4/container/admin-user.md
+```{include} /latest/container/admin-user.md
 ```
 
 ## Starting the Vulnerability Management
@@ -93,7 +95,7 @@ xdg-open "https://127.0.0.1" 2>/dev/null >/dev/null &
 The browser will show the login page of GSA and after using the credentials
 created before, it is possible to start with vulnerability scanning.
 
-```{figure} /images/GSA-22.4.png
+```{figure} /images/GSA-{{TO DO MAKE A NEW SCREENSHOT}}.png
 ---
 alt: Launching Greenbone Security Assistant for the first time
 ---
